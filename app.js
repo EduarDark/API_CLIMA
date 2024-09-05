@@ -3,7 +3,7 @@ document.getElementById('buscar').addEventListener('click', () => {
 
   if (ciudad) {
       const apiKey = 'ad2ef0935b0d61940b8cb436417696ab'; 
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${ad2ef0935b0d61940b8cb436417696ab}&units=metric&lang=es`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`;
 
       fetch(url)
           .then(response => response.json())
